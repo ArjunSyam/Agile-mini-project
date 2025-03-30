@@ -1,6 +1,4 @@
-from fileinput import input
 from flask import Flask, render_template, request
-import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 
