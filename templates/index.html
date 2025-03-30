@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ML Algorithm Selector</title>
+    </head>
+    <body>
+        <h2>Select ML Algorithm and Enter Value</h2>
+        <form method="post">
+            <label for="input_value">Enter a number:</label>
+            <input type="number" name="input_value" step="any" required />
+            <br /><br />
+            <label for="algorithm">Choose an algorithm:</label>
+            <select name="algorithm" required>
+                <option value="KNN">KNN</option>
+                <option value="SVM">SVM</option>
+            </select>
+            <br /><br />
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction is not none %}
+        <h3>Prediction: {{ prediction }}</h3>
+        {% endif %}
+    </body>
+</html>
