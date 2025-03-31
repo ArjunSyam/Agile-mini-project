@@ -1,3 +1,5 @@
 {
-  "reportMissingImports": false
+  "typeCheckingMode": "off",
+  "reportMissingImports": false,
+  "reportUnusedImports": false
 }

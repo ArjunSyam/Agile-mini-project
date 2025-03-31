@@ -1,4 +1,6 @@
-FROM python:latest
+FROM --platform=linux/x86_64 python:3.9
+
+RUN python -m pip install --upgrade pip
 
 WORKDIR /app
 
